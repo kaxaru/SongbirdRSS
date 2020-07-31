@@ -20,8 +20,7 @@
       "impliedStrict": true,
       "jsx": true
     },
-    "project": "./tsconfig.json",
-    "createDefaultProgram": true
+    "project": "./tsconfig.eslint.json"
   },
   "rules": {
     "react/prop-types": 0,
@@ -38,10 +37,15 @@
     "import/resolver": {
       "node": {},
       "typescript": {}
+    },
+    "typescript": {
+      "alwaysTryTypes": true, 
+      "directory": "./tsconfig.json"
     }
   },
   "env": {
     "es2020": true,
-    "browser": true
+    "browser": true,
+    "node": true
   }
 }

@@ -12,6 +12,7 @@
           "@babel/preset-react"
         ],
     "plugins": [
+        "babel-plugin-styled-components",
         "@babel/plugin-syntax-dynamic-import",
         "@babel/proposal-class-properties",
         "@babel/plugin-transform-runtime"

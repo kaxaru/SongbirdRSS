@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const TerserWebackPlugin = require('terser-webpack-plugin')
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
