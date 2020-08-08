@@ -1,0 +1,59 @@
+.item-image {
+    display: flex;
+    justify-content: center;
+    height: inherit;
+}
+
+.item-image img {
+    object-fit: contain;
+    height: 100%;
+    max-height: 300px;
+    border-radius: 25px;
+}
+
+.question-item .item-header {
+    margin: 10px;
+    font-size: 24px;
+    text-align: center;
+    font-variant: all-small-caps;
+}
+
+.question-item .item-description {
+    display: flex;
+    justify-content: center;
+}
+
+.squeze .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.squeze .item-image {
+    height: 50%
+}
+
+.squeze .item-content {
+    font-size: 16px;
+}
+
+.squeze .item-content {
+    font-size: 16px;
+}
+
+.squeze .item-header {
+    font-size:24px;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.squeze .item-meta {
+    display: flex;
+    justify-content: center;
+    margin:5px;
+    font-family: cursive;
+}
+
+.squeze .item-description {
+    text-indent: 20px;
+}

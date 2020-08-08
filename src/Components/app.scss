@@ -1,3 +1,41 @@
-.styles {
-    color: red;
+.header {
+    height: 90px;
+}
+
+.content > .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 250px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgb(151 165 245 / 50%);
+    border-radius: 25px;
+}
+
+.content > .item .item-content {
+    width: 50%
+}
+
+.squeze {
+    display: flex;
+    justify-content: space-around;
+    height: 420px;
+    margin-bottom: 30px;
+}
+
+.squeze .item {
+    width:50%
+}
+
+.nextStage {
+    display: flex !important;
+    width: 200px;
+    margin: 0 auto !important;
+}
+
+.squeze {
+    background-color: rgba(151, 165, 245, 0.5);
+    border-radius: 25px;
 }
