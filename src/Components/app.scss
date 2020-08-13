@@ -39,3 +39,64 @@
     background-color: rgba(151, 165, 245, 0.5);
     border-radius: 25px;
 }
+
+    @media only screen and  (max-width: 1000px) {
+
+        .question-item {
+            flex-direction: column;
+            height: 100% !important;
+        }
+    }
+
+    @media only screen and  (max-width: 720px) {
+
+            .leveltype {
+                flex-direction: column;
+            }
+
+            .leveltype .MuiListItemText-root {
+                margin: 0;
+            }
+
+            .squeze {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                height: auto;
+                padding: 20px;
+            }
+
+            .item-image img {
+                width: 250px;
+            }
+
+    }
+
+    @media only screen and  (max-width: 500px) {
+
+        .logo img {
+            width: 200px;
+        }
+
+        .score-system {
+            flex: 1 40%;
+        }
+
+        .score-system h4 {
+            font-size: 20px;
+        }
+
+        .content > .item .item-content {
+            width: 100%
+        }
+
+        .audio-player {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            cursor: default;
+        }
+    }

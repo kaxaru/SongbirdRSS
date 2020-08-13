@@ -162,7 +162,7 @@ const App: React.FC = () => {
         </div>
         <Level levelType={(option.stage).toString()}/>
         <div className="content">
-          <QuestionCard option={option} store={store} />
+          <QuestionCard option={option} store={store}/>
           <div className="squeze">
             <QuestionItem 
             store={store} 

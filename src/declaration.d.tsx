@@ -14,3 +14,4 @@ declare module "*.mp3"{
 }
 
 declare module 'react-modular-audio-player';
+declare module 'react-player/youtube'

@@ -11,7 +11,7 @@ import { getLevel } from '../utils/getLevel'
 interface Card {
     user?: IUserOption,
     option: IOption,
-    store: IStore [][]
+    store: IStore [][],
 }
 
 const Card: React.FC<Card> = ({user, option, store}) => {
@@ -59,7 +59,12 @@ const Card: React.FC<Card> = ({user, option, store}) => {
                             {getAnswerHeader(option.isAnswered)}
                         </div>
                         <div className="item-description">
-                            <AudioPlayer bird={curBird} stage={option.stage}></AudioPlayer>
+                            <AudioPlayer 
+                            bird={curBird} 
+                            stage={option.stage} 
+                            immutable={option.isAnswered}
+                            isQuestionCard={true}
+                            ></AudioPlayer>
                         </div>   
                     </div>
                 </div>
@@ -67,10 +72,7 @@ const Card: React.FC<Card> = ({user, option, store}) => {
         } else if (user !== undefined && option !== undefined && !user.isBirdClick) {
             return (
                 <div className="item">
-                    <div className="item-content">
-                        <div className="item-header"></div>
-                        <div className="item-description"></div>
-                    </div>
+                    <div className="item-hint">Выберите птицу из списка</div>
                 </div>
             )
         } else {
