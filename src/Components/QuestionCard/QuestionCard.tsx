@@ -72,7 +72,7 @@ const Card: React.FC<Card> = ({user, option, store}) => {
         } else if (user !== undefined && option !== undefined && !user.isBirdClick) {
             return (
                 <div className="item">
-                    <div className="item-hint">Выберите птицу из списка</div>
+                    <div className="item-hint">Выберите игру из списка</div>
                 </div>
             )
         } else {
@@ -86,7 +86,7 @@ const Card: React.FC<Card> = ({user, option, store}) => {
                             {store[getLevel(option.stage)][user.id - 1].name}
                         </div>
                         <div className="item-meta">
-                            {store[getLevel(option.stage)][user.id - 1].species}
+                            {store[getLevel(option.stage)][user.id - 1].publisher}
                         </div>
                         <div className="item-meta">
                             <AudioPlayer 

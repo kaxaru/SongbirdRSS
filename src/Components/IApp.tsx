@@ -1,7 +1,7 @@
-import LevelType from './Level/levelType'
+import LevelTypeGameOst from './Level/LevelGameOstType'
 
 interface IOption {
-    stage: LevelType,
+    stage: LevelTypeGameOst,
     answer: null | number,
     answerName: string,
     isAnswered: boolean,
@@ -16,10 +16,10 @@ interface IUserOption {
 interface IStore {
     id: number;
     name: string;
-    species: string;
+    publisher: string;
     description: string;
     image: string;
-    audio: string;
+    audio: {default: string};
 }
 
 export { IOption, IUserOption, IStore }

@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
-import {IStore} from '../Components/IApp'
+//import {IStore} from '../Components/IApp'
 
-const birdsData:IStore[][] = [
+const birdsData = [
     [       
       {
         id: 1,

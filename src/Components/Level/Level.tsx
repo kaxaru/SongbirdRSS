@@ -2,7 +2,7 @@ import React from 'react';
 import './Level.scss';
 import List from '@material-ui/core/List';
 import ListItemText from '@material-ui/core/ListItemText';
-import level from './levelType'
+import level from './LevelGameOstType'
 
 interface Level {
     levelType: string;

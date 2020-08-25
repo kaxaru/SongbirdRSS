@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Logo from './Logo/Logo'
 import Score from './Score/Score'
 import Level from './Level/Level'
-import LevelType from './Level/levelType'
+import LevelTypeGameOst from './Level/LevelGameOstType'
 import QuestionCard from './QuestionCard/QuestionCard'
 import QuestionItem from './QuestionItems/QuestionItems'
 import FinalContainer from './FinalContainer/FinalContainer'
@@ -12,13 +12,13 @@ import {IOption, IUserOption, IStore} from './IApp'
 import Button from '@material-ui/core/Button';
 import Icon from '@material-ui/core/Icon';
 
-import store from '../Store/birds'
+import store from '../Store/games'
 import {getLevel, getLevelFromId} from './utils/getLevel'
 
 import './app.scss';
 
 const defOption: IOption = {
-  stage: LevelType.Stretch,
+  stage: LevelTypeGameOst.Indie,
   answer: null,
   answerName: '',
   isAnswered: false,
@@ -125,7 +125,7 @@ const App: React.FC = () => {
           isAnswered: false,
           answer: null,
           answerName: '',
-          stage: LevelType[cLevel]
+          stage: LevelTypeGameOst[cLevel]
         }
         setOption(newOption)
         const newUserOption = {

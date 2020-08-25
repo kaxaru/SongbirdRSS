@@ -1,4 +1,4 @@
-import level from '../Level/levelType'
+import level from '../Level/LevelGameOstType'
 
 type GetLevel = (cLevel: string | null) => number
 const getLevel:GetLevel = (cLevel: string | null) =>  {

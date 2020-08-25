@@ -48,8 +48,15 @@ const AudioPlayer:React.FC<AudioPlayer> = ({bird, stage, immutable, isQuestionCa
     return bird.name;
   }
 
+  const getPath = () => {
+    if(bird === null) {
+      return 'unknown'
+    }
+    return bird.audio.default
+  }
+
     audio.push({
-      src: (() => bird === null ? 'unknown' : bird?.audio)(),
+      src: (() => getPath())(),
       title: getTitle(),
       artist: `stage ${stage}`
     })
