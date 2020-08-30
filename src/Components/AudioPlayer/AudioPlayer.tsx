@@ -10,27 +10,30 @@ interface AudioPlayer {
 }
 
 const AudioPlayer:React.FC<AudioPlayer> = ({bird, stage, immutable, isQuestionCard}) => {
-  const [isPlay, setPlay] = useState(true)
+  const [isPlay, setPlay] = useState<null | string>(null)
   const audio = []; 
 
   useEffect(() => {
-    if(immutable) {
-      setPlay(false)
-    } else {
-      setPlay(true)
+    if(!immutable && isPlay === null) {
+      const buttonPlay = document.querySelectorAll('.audio-player #play-icon')[0] as HTMLImageElement;
+      const data = buttonPlay.src
+      setPlay(data)
     }
-  }, [immutable])
+  }, [immutable, isPlay])
 
   useEffect(() => {
-    if(!isPlay) {
+    if(immutable !== undefined && immutable) {
+      console.log('click')
       const audioPlayer = document.querySelectorAll('.audio-player audio')[0] as HTMLAudioElement;
+      const buttonPlay = document.querySelectorAll('.audio-player #play-icon')[0] as HTMLImageElement;
       audioPlayer.pause();
       audioPlayer.currentTime = 0;
       audioPlayer.src = '';
-      const buttonPlay = document.querySelectorAll('.audio-player #play-icon')[0] as HTMLImageElement;
-      buttonPlay.click()
+      if (isPlay !== null && isPlay !== buttonPlay.src) {
+        buttonPlay.click()
+      }
     } 
-  })
+  },[immutable, isPlay])
 
   const getTitle = () => {
     if(bird === null) {

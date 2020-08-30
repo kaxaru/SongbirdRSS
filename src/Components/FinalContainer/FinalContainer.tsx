@@ -1,7 +1,7 @@
 import React from 'react'
 import './FinalContainer.scss'
 import Button from '@material-ui/core/Button';
-import ReactPlayer from 'react-player/youtube'
+import ReactPlayer from 'react-player/lazy'
 
 interface IFinalContainer {
     isBestResult: () => boolean,
@@ -39,7 +39,12 @@ const FinalContainer:React.FC<IFinalContainer> = ({isBestResult, maxScore, userS
                 <span>Поздравляем!</span>
                 <span>Вы набрали максимальное количество баллов</span>
                 <div className="player-wrapper">
-                    <ReactPlayer className='reactPlayer' url="https://youtu.be/6iFbuIpe68k" playing={true}></ReactPlayer>
+                    <ReactPlayer 
+                    width="100%"
+                    height="300px"
+                    className='reactPlayer' 
+                    url="https://youtu.be/6iFbuIpe68k" 
+                    playing={true}></ReactPlayer>
                 </div>
             </div>
                 </>

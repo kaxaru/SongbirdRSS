@@ -15,6 +15,7 @@ import Icon from '@material-ui/core/Icon';
 import store from '../Store/games'
 import {getLevel, getLevelFromId} from './utils/getLevel'
 
+import './fonts.scss'
 import './app.scss';
 
 const defOption: IOption = {

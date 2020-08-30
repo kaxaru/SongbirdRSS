@@ -1,12 +1,23 @@
 $height: 100px;
 
 .logo {
+    display: flex;
+    align-items: center;
     width: 80%;
     height:inherit;
 }
 
 .logo img {
-    width: 300px;
+    width: 120px;
     object-fit: contain;
     height: inherit;
+}
+
+.logo_text {
+    font-size: 24px;
+    font-family: 'Retro', sans-serif;
+}
+
+.logo_text span {
+    color: #d92020;
 }

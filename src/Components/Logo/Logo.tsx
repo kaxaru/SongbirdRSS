@@ -6,6 +6,7 @@ const Logo: React.FC = () => {
     return (
         <div className="logo">
             <img src={LogoImage} alt="" />
+            <div className='logo_text'>Sound<span>Ost</span></div>
         </div>
     )
 }

@@ -40,11 +40,23 @@
     border-radius: 25px;
 }
 
+    @media only screen and  (max-width: 1500px) {
+
+        .item-image.gamepic img {
+            max-width: 400px
+        }
+    }
+
+
     @media only screen and  (max-width: 1000px) {
 
         .question-item {
             flex-direction: column;
             height: 100% !important;
+        }
+
+        .item-image img {
+            width: 100%;
         }
     }
 
@@ -70,12 +82,16 @@
                 width: 250px;
             }
 
+            .squeze .item {
+                width: 100%;
+            }
+
     }
 
     @media only screen and  (max-width: 500px) {
 
-        .logo img {
-            width: 200px;
+        .questionlist {
+            width: 100%;
         }
 
         .score-system {
@@ -98,5 +114,9 @@
             align-items: center;
             height: 50px;
             cursor: default;
+        }
+
+        .finalContext-header {
+            width: 100%;
         }
     }

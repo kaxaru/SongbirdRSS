@@ -4,7 +4,7 @@ import './Card.scss'
 import AudioPlayer from '../AudioPlayer/AudioPlayer'
 import {IOption, IUserOption, IStore} from '../IApp'
 
-import EmptyBird from '../../assets/image/wtfbird.jpg'
+import Steam from '../../assets/image/steam.jpg'
 import { getLevel } from '../utils/getLevel'
 
 
@@ -27,13 +27,13 @@ const Card: React.FC<Card> = ({user, option, store}) => {
 
     const getAnswerPic = (answer: boolean) => {
         if (!answer) {
-            return EmptyBird;
+            return Steam;
         } 
         if (option?.answer !== null) {
             const curBird: IStore = store[getLevel(option.stage)][option.answer - 1]
             return curBird.image;
         }
-        return EmptyBird
+        return Steam
     }
 
     const getAnswerHeader = (answer: boolean) => {
@@ -50,7 +50,7 @@ const Card: React.FC<Card> = ({user, option, store}) => {
         if(user === undefined) {
             return (
                 <div className="item question-item">
-                    <div className="item-image">
+                    <div className={`item-image ${option?.isAnswered ? 'gamepic' : 'steam'}`}>
                         <img src={
                             getAnswerPic(option?.isAnswered)} alt="" />
                     </div>

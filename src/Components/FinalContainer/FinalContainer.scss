@@ -11,9 +11,9 @@
 .finalContext-header {
     display: flex;
     flex-direction: column;
-    width: 640px;
     height: 1000px;
     margin: 20px;
+    text-align: center;
 }
 
 .finalContext-header span {
@@ -22,6 +22,7 @@
 
 .player-wrapper {
     position: relative;
+    margin-top: 20px;
 }
 
 .reactPlayer {
