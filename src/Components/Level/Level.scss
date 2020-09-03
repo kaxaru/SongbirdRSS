@@ -1,0 +1,20 @@
+$heightMenu: 50px;
+
+.leveltype {
+  display: flex;
+}
+
+.leveltype span {
+    height: $heightMenu;
+    font-size: 16px;
+    line-height: $heightMenu;
+    font-family: 'Retro', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    background-color: darkgreen;
+}
+
+.MuiListItemText-root.active span {
+    background-color: red;
+}

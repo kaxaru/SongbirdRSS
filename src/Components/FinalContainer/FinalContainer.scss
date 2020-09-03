@@ -1,0 +1,32 @@
+.finalContext {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size:24px;
+    font-variant: small-caps;
+}
+
+.finalContext-header {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    margin: 20px;
+    text-align: center;
+}
+
+.finalContext-header span {
+    align-self: center;
+}
+
+.player-wrapper {
+    position: relative;
+    margin-top: 20px;
+}
+
+.reactPlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

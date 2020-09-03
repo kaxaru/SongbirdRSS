@@ -1,3 +1,122 @@
-.styles {
-    color: red;
+.header {
+    height: 90px;
 }
+
+.content > .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 250px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgb(151 165 245 / 50%);
+    border-radius: 25px;
+}
+
+.content > .item .item-content {
+    width: 50%
+}
+
+.squeze {
+    display: flex;
+    justify-content: space-around;
+    height: 420px;
+    margin-bottom: 30px;
+}
+
+.squeze .item {
+    width:50%
+}
+
+.nextStage {
+    display: flex !important;
+    width: 200px;
+    margin: 0 auto !important;
+}
+
+.squeze {
+    background-color: rgba(151, 165, 245, 0.5);
+    border-radius: 25px;
+}
+
+    @media only screen and  (max-width: 1500px) {
+
+        .item-image.gamepic img {
+            max-width: 400px
+        }
+    }
+
+
+    @media only screen and  (max-width: 1000px) {
+
+        .question-item {
+            flex-direction: column;
+            height: 100% !important;
+        }
+
+        .item-image img {
+            width: 100%;
+        }
+    }
+
+    @media only screen and  (max-width: 720px) {
+
+            .leveltype {
+                flex-direction: column;
+            }
+
+            .leveltype .MuiListItemText-root {
+                margin: 0;
+            }
+
+            .squeze {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                height: auto;
+                padding: 20px;
+            }
+
+            .item-image img {
+                width: 250px;
+            }
+
+            .squeze .item {
+                width: 100%;
+            }
+
+    }
+
+    @media only screen and  (max-width: 500px) {
+
+        .questionlist {
+            width: 100%;
+        }
+
+        .score-system {
+            flex: 1 40%;
+        }
+
+        .score-system h4 {
+            font-size: 20px;
+        }
+
+        .content > .item .item-content {
+            width: 100%
+        }
+
+        .audio-player {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            cursor: default;
+        }
+
+        .finalContext-header {
+            width: 100%;
+        }
+    }
